@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.ara_tech.es.aratech.LoginActivity">
+
+    <!--<ImageSwitcher-->
+        <!--android:id="@+id/imageSwitcher"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" >-->
+    <!--</ImageSwitcher>-->
+
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/twitter_login_button"
+        android:text="Twitter"/>-->
+
+    <!--<com.facebook.login.widget.LoginButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fb_login_button"/>-->
+
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/twitter_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/btReg"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fb_login_button"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/twitter_login_button"
+        android:layout_alignLeft="@+id/btReg"
+        android:layout_alignStart="@+id/btReg"
+        android:background="@drawable/com_facebook_button_icon_blue" />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_in_button"
+        android:layout_alignTop="@+id/fb_login_button"
+        android:layout_alignRight="@+id/btReg"
+        android:layout_alignEnd="@+id/btReg">
+
+    </com.google.android.gms.common.SignInButton>
+
+    <ImageView
+        android:id="@+id/imLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:id="@+id/tvNineras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#bf2a1a"
+        android:textSize="16dp"
+        android:text="¡Le deseamos un provechoso uso de NIÑERAS!"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/imLogo"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btInicio"
+        android:onClick="logeo"
+        android:layout_height="48dp"
+        android:textColor="#fcfbf5"
+        android:background="@drawable/borde_redondeado_botones_rojos"
+        android:textAllCaps="false"
+        android:text="Iniciar sesión"
+        android:textSize="25dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btReg"
+        android:layout_alignStart="@+id/btReg" />
+
+    <Button
+        android:id="@+id/btReg"
+        android:onClick="registro"
+        android:layout_height="wrap_content"
+        android:textColor="#fcfbf5"
+        android:background="@drawable/borde_redondeado_botones_rojos"
+        android:textAllCaps="false"
+        android:text="Registrarme"
+        android:textSize="25dp"
+        android:layout_marginBottom="24dp"
+        android:layout_width="350dp"
+        android:layout_above="@+id/btInicio"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvReg"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textColor="#bf2a1a"
+        android:text="Regístrate con:"
+        android:textSize="18dp"
+        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/sign_in_button"
+        android:layout_toRightOf="@+id/fb_login_button"
+        android:layout_toEndOf="@+id/fb_login_button" />
+</RelativeLayout>

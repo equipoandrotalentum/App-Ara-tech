@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_fragment_listado">ListadoFragment</string>
+    <string-array name="especificaciones_listtado">
+
+        <item>Alergia al chocolate</item>
+        <item>Alergia a los ácaros</item>
+        <item>Varicela</item>
+        <item>Nivel de dependencia 1</item>
+        <item>Nivel de dependencia 2</item>
+        <item>Nivel de dependencia 3</item>
+
+
+    </string-array>
+
+
+</resources>

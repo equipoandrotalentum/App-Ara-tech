@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.ara_tech.es.aratech.gestion.login.RegistroActivity">
+
+
+    <Button
+        android:id="@+id/btOjo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_remove_red_eye_black_24dp"
+        android:backgroundTint="@android:color/white"
+        android:background="@android:color/transparent"
+        android:layout_alignBottom="@+id/etPass"
+        android:layout_alignRight="@+id/etTelefono"
+        android:layout_alignEnd="@+id/etTelefono" />
+
+    <ImageView
+        android:id="@+id/imLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:id="@+id/etusuario"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Nombre de usuario"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/btOjo"
+        android:layout_alignRight="@+id/btOjo"
+        android:layout_alignEnd="@+id/btOjo" />
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Nº de teléfono"
+        android:layout_marginBottom="52dp"
+        android:layout_above="@+id/btnReg"
+        android:layout_alignLeft="@+id/btnReg"
+        android:layout_alignStart="@+id/btnReg" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Correo electrónico"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/etTelefono"
+        android:layout_alignLeft="@+id/etPass"
+        android:layout_alignStart="@+id/etPass" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/etEmail"
+        android:layout_alignLeft="@+id/etusuario"
+        android:layout_alignStart="@+id/etusuario">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fcfbf5"
+        android:background="@drawable/borde_redondeado_botones_rojos"
+        android:textAllCaps="false"
+        android:text="Registrarme"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

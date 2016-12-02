@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "287531730531",
+    "project_id": "firebase-aratech"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287531730531:android:ee0ff5759c5f34b6",
+        "android_client_info": {
+          "package_name": "android.ara_tech.es.aratech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287531730531-m3tf9rejs1p68l4973lfmagh6fhcdka0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "android.ara_tech.es.aratech",
+            "certificate_hash": "BA5689AA82F493D5FA93BFFC11ED50EE55801F5E"
+          }
+        },
+        {
+          "client_id": "287531730531-rvcb87avebnipmf7kov68qrp19eplgu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR7hudo1jyjrpy8E-O0DyCD6rNdz2B_IU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

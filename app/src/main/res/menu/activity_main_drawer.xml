@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:textColor="#bf2a1a"/>
+
+        <item
+            android:id="@+id/zonas"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="Mis zonas"
+            android:textColor="#bf2a1a"/>
+        <item
+            android:id="@+id/cuidadores"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="Mis cuidadores"
+            android:textColor="#bf2a1a"/>
+        <item
+            android:id="@+id/notificaciones"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="Notificaciones"
+            android:textColor="#bf2a1a"/>
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="Chat"
+            android:textColor="#bf2a1a"/>
+    </group>
+
+</menu>

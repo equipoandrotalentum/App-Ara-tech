@@ -1,0 +1,139 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cuidador"
+    android:fillViewport="true"
+    tools:context="android.ara_tech.es.aratech.Fragments.CuidadorFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btCalendar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Contratar"
+            android:textColor="#fdfdf9"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:background="@drawable/borde_redondeado_botones_rojos"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp" />
+
+        <CheckBox
+            android:id="@+id/cbNiños"
+            android:text="Niños"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbAncianos"
+            android:layout_alignLeft="@+id/cbAncianos"
+            android:layout_alignStart="@+id/cbAncianos" />
+
+        <TextView
+            android:id="@+id/tvEdadCuidador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Edad"
+            android:textColor="#bf2a1a"
+            android:layout_alignTop="@+id/cbAncianos"
+            android:layout_alignRight="@+id/ratingBar"
+            android:layout_alignEnd="@+id/ratingBar"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/tvNombreCuidador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:textColor="#bf2a1a"
+            android:layout_alignBaseline="@+id/tvCuidados"
+            android:layout_alignBottom="@+id/tvCuidados"
+            android:layout_alignLeft="@+id/tvEdadCuidador"
+            android:layout_alignStart="@+id/tvEdadCuidador" />
+
+        <TextView
+            android:id="@+id/tvNacionalidadCuidador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nacionalidad"
+            android:textColor="#bf2a1a"
+            android:layout_below="@+id/cbAncianos"
+            android:layout_alignLeft="@+id/tvEdadCuidador"
+            android:layout_alignStart="@+id/tvEdadCuidador" />
+
+        <CheckBox
+            android:id="@+id/cbAncianos"
+            android:text="Ancianos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/tvCuidados"
+            android:layout_alignLeft="@+id/tvCuidados"
+            android:layout_alignStart="@+id/tvCuidados" />
+
+        <ImageView
+            android:id="@+id/imgCuidador"
+            android:background="@drawable/a"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/tvEdadCuidador"
+            android:layout_alignLeft="@+id/btValoraciones"
+            android:layout_alignStart="@+id/btValoraciones" />
+
+        <RatingBar
+            android:stepSize="0.5"
+            android:numStars="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_below="@+id/imgCuidador"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/descripcionCuidador"
+            android:inputType="textMultiLine"
+            android:background="@drawable/border"
+            android:text="Soy una persona especializada en el cuidado de niños, ancianos y personas con movilidad reducida. Tengo amplia experiecia en estos campos y cuento estudios especializados en geriatría."
+            android:textColor="#bf2a1a"
+            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:gravity="center"
+            android:layout_below="@+id/ratingBar"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btValoraciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver valoraciones"
+            android:textColor="#bf2a1a"
+            android:background="#fdfdf9"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_below="@+id/ratingBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="73dp" />
+
+        <TextView
+            android:id="@+id/tvCuidados"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cuidados"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="#bf2a1a"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/descripcionCuidador"
+            android:layout_alignStart="@+id/descripcionCuidador" />
+
+    </RelativeLayout>
+
+
+</ScrollView>
